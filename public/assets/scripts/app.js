@@ -56,13 +56,13 @@ document.querySelectorAll('.faq-question').forEach(button => {
         item.classList.remove('open');
         const otherIcon = item.querySelector('.icon-toggle');
         if (otherIcon) {
-          otherIcon.src = 'assets/imgs/expand-more.png';
+          otherIcon.src = '/public/assets/images/expand-more.png';
         }
       }
     });
 
     const isOpen = faqItem.classList.toggle('open');
-    icon.src = isOpen ? 'assets/imgs/expand-less.png' : 'assets/imgs/expand-more.png';
+    icon.src = isOpen ? '/public/assets/images/expand-less.png' : '/public/assets/images/expand-more.png';
   });
 });
 
